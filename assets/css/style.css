@@ -33,6 +33,17 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Abygaer";
+  src: url("Abygaer.woff2") format("woff2"), url("Abygaer.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  letter-spacing: 0.5px;
+}
+
 p {
   font-family: "Avenir LT Std";
   font-size: 16px;
@@ -48,6 +59,22 @@ h5 {
 
 .font-gill-sans {
   font-family: "Gill Sans normal";
+}
+
+.font-abygaer {
+  font-family: "Abygaer";
+}
+
+.font-avenir-roman {
+  font-family: "Avenir LT Std normal";
+}
+
+.font-avenir-oblique {
+  font-family: "Avenir LT Std book-italic";
+}
+
+.ltr-spc-3 {
+  letter-spacing: 3px;
 }
 
 .size-36 {
@@ -74,6 +101,10 @@ h5 {
   font-size: 14px;
 }
 
+.size-24 {
+  font-size: 24px;
+}
+
 .size-18 {
   font-size: 18px;
 }
@@ -82,8 +113,8 @@ h5 {
   font-size: 13px;
 }
 
-h6 {
-  font-family: "Avenir LT Std";
+.ltr-spc-4 {
+  letter-spacing: 4px !important;
 }
 
 .clr-1 {
@@ -145,38 +176,133 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #d1b38d;
 }
 
-.hero .carousel .carousel-inner .carousel-item {
+.hero .carousel .carousel-inner .first-item {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text {
+.hero .carousel .carousel-inner .first-item .logo-text {
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
   width: 75%;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text .logo-text-img-contain {
+.hero .carousel .carousel-inner .first-item .logo-text .logo-text-img-contain {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text .heading-contain {
+.hero .carousel .carousel-inner .first-item .logo-text .heading-contain {
   border-left: 2px solid #c39f71;
   padding-left: 3rem;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text .heading-contain h1 {
+.hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 {
   margin-bottom: 15px;
   line-height: 30px;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text .heading-contain h1 .second-contain {
+.hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 .second-contain {
   line-height: 55px;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text .heading-contain h1 .first-contain {
+.hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 .first-contain {
   line-height: 75px;
 }
-.hero .carousel .carousel-inner .carousel-item .logo-text .heading-contain p {
+.hero .carousel .carousel-inner .first-item .logo-text .heading-contain p {
   line-height: 30px;
   margin-bottom: 0;
+}
+.hero .carousel .default-item-style {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hero .carousel .default-item-style .text-contain {
+  height: 37%;
+  width: 68%;
+}
+.hero .carousel .carousel-control-prev .carousel-control-prev-icon {
+  background-image: url("../img/banner/prev-icon.png") !important;
+  background-size: auto !important;
+}
+.hero .carousel .carousel-control-next .carousel-control-next-icon {
+  background-image: url("../img/banner/next-icon.png") !important;
+  background-size: auto !important;
+}
+
+.lifespace {
+  background-image: url("../img/lifespace/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-size: contain;
+  margin-bottom: 4rem;
+}
+.lifespace .lifespace-contain {
+  height: 63%;
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 8rem;
+}
+.lifespace .lifespace-contain ul {
+  padding-left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-us {
+  background-image: url("../img/lifespace/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-size: contain;
+}
+.about-us .lifespace-contain {
+  height: 63%;
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-right: 5rem;
+}
+
+.accessibility {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.maps-section {
+  height: 800px;
+  overflow: hidden;
+}
+.maps-section .img-map {
+  transform: translateY(-140px);
+}
+
+.overlooking {
+  padding: 22rem 0;
+}
+.overlooking .img-contain {
+  top: -15%;
+}
+.overlooking .img-contain .overlooking-image-text {
+  width: 37%;
+  margin-left: 3rem;
+}
+.overlooking .img-contain .main-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.the-world .img-block {
+  width: 320px;
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
