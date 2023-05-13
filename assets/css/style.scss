@@ -1,0 +1,210 @@
+// fonts start
+@font-face {
+    font-family: "Avenir LT Std normal";
+    src: url("../font/AvenirLTStd-Roman.woff2") format("woff2"), url("../font/AvenirLTStd-Roman.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mile Heights Free Personal Use";
+    src: url("../font/mile-height-font/MileHeights-FreePersonalUse.woff2") format("woff2"),
+        url("../font/mile-height-font/MileHeights-FreePersonalUse.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir LT Std book-italic";
+    src: url("../font/AvenirLTStd-BookOblique.woff2") format("woff2"),
+        url("../font/AvenirLTStd-BookOblique.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir LT Std 300";
+    src: url("../font/AvenirLTStd-Light.woff2") format("woff2"), url("../font/AvenirLTStd-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gill Sans normal";
+    src: url("../font/gilsans-font/GillSans.woff2") format("woff2"),
+        url("../font/gilsans-font/GillSans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// fonts end
+
+p {
+    font-family: "Avenir LT Std";
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Mile Heights Free Personal Use";
+}
+
+.font-gill-sans {
+    font-family: "Gill Sans normal";
+}
+
+.size-36 {
+    font-size: 36px;
+}
+
+.size-60 {
+    font-size: 60px;
+}
+
+.size-30 {
+    font-size: 30px;
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-18 {
+    font-size: 18px;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+.size-18 {
+    font-size: 18px;
+}
+
+.size-13 {
+    font-size: 13px;
+}
+
+h6 {
+    font-family: "Avenir LT Std";
+}
+
+.clr-1 {
+    color: #ffffff;
+}
+
+.clr-2 {
+    color: #704916;
+}
+
+.clr-3 {
+    color: #c39f71;
+}
+
+.bg-color-1 {
+    background-color: #ba9170;
+}
+
+.color-4 {
+    color: #666666;
+}
+
+.bg-color-2 {
+    background-color: #f7f7f7;
+}
+
+.btn-clr {
+    background-color: #debe95;
+}
+
+.bg-color-3 {
+    background-color: #091710;
+}
+
+header {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: #121e1aba;
+    padding: 1rem 7rem 1rem 18rem !important;
+
+    .navbar {
+        .navbar-collapse {
+            justify-content: flex-end;
+            padding-top: 3rem;
+
+            .navbar-nav {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+
+                .nav-item {
+                    .nav-link {
+                        color: #fff;
+
+                        &.active {
+                            color: #d1b38d;
+                        }
+
+                        &:hover {
+                            color: #d1b38d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .logo-text {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-evenly;
+                    width: 75%;
+                    
+                    .logo-text-img-contain {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                    }
+                    .heading-contain{
+                        border-left: 2px solid #c39f71;
+    padding-left: 3rem;
+    h1 {
+        margin-bottom: 15px;
+        line-height: 30px;
+        .second-contain{
+            line-height: 55px;
+        }
+        .first-contain{
+            line-height: 75px;
+        }
+    }
+    p{
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+                    }
+                }
+            }
+        }
+    }
+}
