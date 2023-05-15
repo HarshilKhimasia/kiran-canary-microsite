@@ -156,24 +156,60 @@ header {
   top: 0;
   background: rgba(18, 30, 26, 0.7294117647);
   padding: 1rem 7rem 1rem 18rem !important;
+  transition: all 0.5s ease;
 }
 header .navbar .navbar-collapse {
   justify-content: flex-end;
   padding-top: 3rem;
 }
+header .navbar .navbar-collapse .menu-number {
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+}
+header .navbar .navbar-collapse .menu-number a {
+  color: #d1b38d !important;
+  text-decoration: none;
+}
+header .navbar .navbar-collapse .menu-number::after {
+  content: "";
+  background: rgba(222, 189, 149, 0.5882352941);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 150%;
+  width: 1px;
+}
 header .navbar .navbar-collapse .navbar-nav {
   width: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item:last-child .nav-link::after {
+  content: none;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
   color: #d1b38d;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #d1b38d;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  height: 50%;
+  width: 2px;
 }
 
 .hero .carousel .carousel-inner .first-item {
@@ -302,7 +338,142 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   justify-content: flex-start;
 }
 
+<<<<<<< HEAD
+.ecoluxe {
+  padding-bottom: 5rem;
+}
+.ecoluxe .villas-content-conatin {
+  background-color: #f7f7f7;
+  padding: 2rem 4rem 2rem 2rem;
+  min-height: 58vh;
+  border: 1px solid #dedede;
+}
+.ecoluxe .cust-contain {
+  padding: 0 13.5%;
+}
+.ecoluxe .cust-contain .gx-5 {
+  --bs-gutter-x: 4rem !important;
+}
+
+.the-world {
+  background-image: url("../img/the-world/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0 9rem 0;
+  margin-bottom: 5rem;
+}
+.the-world .cust-cont {
+  padding: 0 15rem;
+}
 .the-world .img-block {
   width: 320px;
   height: 300px;
+  position: relative;
+  z-index: 0;
+}
+.the-world .img-block h4 {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 1rem 1rem;
+}
+
+footer {
+  background-image: url("../img/footer/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0 0 0;
+}
+footer .cust-cont {
+  padding: 0 15rem;
+}
+footer form .form-control {
+  background-color: transparent !important;
+  border-radius: unset !important;
+}
+footer form .form-control:focus {
+  border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+}
+footer form input {
+  color: #fff !important;
+}
+footer form .btn-anime {
+  z-index: 6;
+  display: inline-block;
+}
+footer form .btn-anime button {
+  background-color: #debe95 !important;
+  border: 1px solid #debe95 !important;
+  color: #000 !important;
+  padding: 0.5rem 2.5rem;
+}
+footer form .btn-anime button:hover ~ .border-expand {
+  animation: mymove 0.6s 1;
+}
+footer form .btn-anime .border-expand {
+  scale: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  z-index: -1;
+  border: 10px solid rgba(222, 190, 149, 0.6);
+}
+@keyframes mymove {
+  0% {
+    scale: 0;
+    opacity: 1;
+  }
+  100% {
+    scale: 2;
+    border: 5px solid rgba(222, 190, 149, 0.6);
+    opacity: 0;
+  }
+}
+footer .copy-cust {
+  background-color: #091710;
+  margin-top: 4rem;
+}
+footer .copy-cust .copyright {
+  padding: 1.5rem 0;
+}
+footer .copy-cust .copyright .left-copyright {
+  border-right: 1px solid #fff;
+}
+footer input.no-arrows::-webkit-inner-spin-button,
+footer input.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+footer input.no-arrows {
+  -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(18, 30, 26);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(30, 52, 40);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(30, 52, 40);
+=======
+.the-world .img-block {
+  width: 320px;
+  height: 300px;
+>>>>>>> 998f1d31645e86c630ea11a4ddea7b2455029c4e
 }/*# sourceMappingURL=style.css.map */
