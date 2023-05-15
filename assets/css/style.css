@@ -338,6 +338,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   justify-content: flex-start;
 }
 
+<<<<<<< HEAD
 .ecoluxe {
   padding-bottom: 5rem;
 }
@@ -470,4 +471,9 @@ footer input.no-arrows {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(30, 52, 40);
+=======
+.the-world .img-block {
+  width: 320px;
+  height: 300px;
+>>>>>>> 998f1d31645e86c630ea11a4ddea7b2455029c4e
 }/*# sourceMappingURL=style.css.map */
