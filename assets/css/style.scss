@@ -1,4 +1,4 @@
-@import '_mixins.scss';
+@import "_mixins.scss";
 // fonts start
 @font-face {
     font-family: "Avenir LT Std normal";
@@ -168,8 +168,8 @@ header {
     padding-bottom: 1rem;
     padding-left: 18rem;
     transition: all 0.5s ease;
-    #brand-logo{
-        transition: all .5s ease;
+    #brand-logo {
+        transition: all 0.5s ease;
     }
     .navbar {
         .navbar-collapse {
@@ -612,8 +612,8 @@ footer {
 }
 // scroll top btn end
 
-.thank-you{
-    background-image: url('../img/thank-you/bg.jpg');
+.thank-you {
+    background-image: url("../img/thank-you/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
