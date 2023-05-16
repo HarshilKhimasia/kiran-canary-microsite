@@ -1,7 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
-
+/*@Media Query Mixin*/
+/*@Media Query Mixin End*/
 @font-face {
   font-family: "Avenir LT Std normal";
   src: url("../font/AvenirLTStd-Roman.woff2") format("woff2"), url("../font/AvenirLTStd-Roman.woff") format("woff");
@@ -159,7 +157,13 @@ header {
   width: 100%;
   top: 0;
   background: rgba(18, 30, 26, 0.7294117647);
-  padding: 1rem 7rem 1rem 18rem !important;
+  padding-top: 1rem;
+  padding-right: 7rem;
+  padding-bottom: 1rem;
+  padding-left: 18rem;
+  transition: all 0.5s ease;
+}
+header #brand-logo {
   transition: all 0.5s ease;
 }
 header .navbar .navbar-collapse {
@@ -240,7 +244,6 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 {
   margin-bottom: 15px;
   line-height: 30px;
-  animation: slideLeft 5s;
 }
 .hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 .second-contain {
   line-height: 55px;
@@ -248,9 +251,37 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 .first-contain {
   line-height: 75px;
 }
-.hero .carousel .carousel-inner .first-item .logo-text .heading-contain p {
+.hero .carousel .carousel-inner .first-item .logo-text p {
   line-height: 30px;
   margin-bottom: 0;
+}
+.hero .carousel .carousel-item.active .circle-full-anim {
+  animation: circle-full 1.6s ease-in forwards;
+}
+@keyframes circle-full {
+  from {
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 0% 0%);
+  }
+  to {
+    -webkit-clip-path: circle(100% at 50%);
+    clip-path: circle(100% at 50%);
+    opacity: 1;
+  }
+}
+.hero .carousel .carousel-item.active .banner-img {
+  animation: img-scale-up 8s ease-in forwards;
+}
+@keyframes img-scale-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.hero .carousel .carousel-item .circle-full-anim {
+  opacity: 0;
 }
 .hero .carousel .default-item-style {
   display: flex;
@@ -268,14 +299,6 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .hero .carousel .carousel-control-next .carousel-control-next-icon {
   background-image: url("../img/banner/next-icon.png") !important;
   background-size: auto !important;
-}
-@keyframes slideLeft {
-  from {
-    transform: translateX(-108%);
-  }
-  to {
-    transform: translateX(0%);
-  }
 }
 
 .lifespace {
