@@ -204,6 +204,7 @@ header {
                 justify-content: center;
 
                 .nav-item {
+                    
                     &:last-child {
                         .nav-link {
                             &::after {
@@ -432,6 +433,7 @@ header {
 // ecoluxe start
 .ecoluxe {
     padding-bottom: 5rem;
+    padding-top: 6rem;
     .villas-content-conatin {
         background-color: #f7f7f7;
         padding: 2rem 4rem 2rem 2rem;
@@ -452,7 +454,7 @@ header {
     background-image: url("../img/the-world/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5rem 0 9rem 0;
+    padding: 8rem 0 9rem 0;
     margin-bottom: 5rem;
     .cust-cont {
         padding: 0 15rem;
