@@ -44,7 +44,7 @@ img.style.maxWidth = '100%';
 let mybutton = document.getElementById("scroll-top-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -54,49 +54,23 @@ function scrollFunction() {
   }
 }
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// scroll top end
+
 
 // simple parallax start
-
 // PARALLAX
 var image2 = document.getElementsByClassName('parallax-top');
 new simpleParallax(image2, {
   delay: .6,
   transition: 'cubic-bezier(0,0,0,1)'
 });
-
 // simple parallax end
 
+// Nav link active start
 
-
-
-// SCROLLING NAV
-(function ($) {
-  "use strict"; // Start of use strict
-
-  // // Smooth scrolling using jQuery easing
-  // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-  //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
-  //         .hostname == this.hostname) {
-  //         var target = $(this.hash);
-  //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  //         if (target.length) {
-  //             $('html, body').animate({
-  //                 scrollTop: (target.offset().top - 56)
-  //             }, 1000, "easeInOutExpo");
-  //             return false;
-  //         }
-  //     }
-  // });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function () {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 100
-  });
-
-})(jQuery); // End of use strict
+// Nav link active end
