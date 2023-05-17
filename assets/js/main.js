@@ -5,15 +5,15 @@ window.addEventListener('scroll', function () {
   var img = document.getElementById('brand-logo');
 
   if (window.pageYOffset > 200) {
-    header.style.backgroundColor = 'rgb(18 30 26)';
+    header.style.background = 'rgb(0 0 0 / 100%)';
     header.style.paddingTop = '0rem';
     header.style.paddingRight = '7rem';
     header.style.paddingBottom = '0rem';
     header.style.paddingLeft = '18rem';
     img.style.maxWidth = '70%';
   } else {
-    header.style.backgroundColor = 'rgba(18, 30, 26, 0.7294117647)';
-    header.style.padding = '1rem 7rem 1rem 18rem';
+    header.style.background = 'rgb(0 0 0 / 90%)';
+    
     header.style.paddingTop = '1rem';
     header.style.paddingRight = '7rem';
     header.style.paddingBottom = '1rem';
@@ -28,6 +28,7 @@ window.addEventListener('scroll', function () {
 var header = document.querySelector('header');
 var img = document.getElementById('brand-logo');
 header.style.position = 'fixed';
+header.style.background = 'rgb(0 0 0 / 100%)';
 header.style.top = '0';
 header.style.left = '0';
 header.style.right = '0';
