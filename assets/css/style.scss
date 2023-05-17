@@ -288,20 +288,23 @@ header {
 
         .carousel-item {
             &.active {
-                .circle-full-anim {
-                    animation: circle-full 1.6s ease-in forwards;
-                    @keyframes circle-full {
-                        from {
-                            -webkit-clip-path: circle(0% at 0% 0%);
-                            clip-path: circle(0% at 0% 0%);
-                        }
-                        to {
-                            -webkit-clip-path: circle(100% at 50%);
-                            clip-path: circle(100% at 50%);
-                            opacity: 1;
-                        }
-                    }
+                .fade-in-anime{
+                    animation: fade-in 5s forwards ease;
                 }
+                .fade-in-anime-para{
+                    animation: fade-in-para 5s forwards ease;
+                    animation-delay: .5s;
+                }
+                @keyframes fade-in {
+                    0%   {opacity: 0;}
+                    
+                    100% {opacity: 1;}
+                  }
+                  @keyframes fade-in-para {
+                    0%   {opacity: 0;}
+                    
+                    100% {opacity: 1;}
+                  }
                 .banner-img {
                     animation: img-scale-up 8s ease-in forwards;
                     @keyframes img-scale-up {
@@ -314,7 +317,10 @@ header {
                     }
                 }
             }
-            .circle-full-anim {
+            .fade-in-anime {
+                opacity: 0;
+            }
+            .fade-in-anime-para{
                 opacity: 0;
             }
         }
