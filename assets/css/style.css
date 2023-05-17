@@ -254,17 +254,26 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   line-height: 30px;
   margin-bottom: 0;
 }
-.hero .carousel .carousel-item.active .circle-full-anim {
-  animation: circle-full 1.6s ease-in forwards;
+.hero .carousel .carousel-item.active .fade-in-anime {
+  animation: fade-in 5s forwards ease;
 }
-@keyframes circle-full {
-  from {
-    -webkit-clip-path: circle(0% at 0% 0%);
-    clip-path: circle(0% at 0% 0%);
+.hero .carousel .carousel-item.active .fade-in-anime-para {
+  animation: fade-in-para 5s forwards ease;
+  animation-delay: 0.5s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  to {
-    -webkit-clip-path: circle(100% at 50%);
-    clip-path: circle(100% at 50%);
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-para {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -279,7 +288,10 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     transform: scale(1.2);
   }
 }
-.hero .carousel .carousel-item .circle-full-anim {
+.hero .carousel .carousel-item .fade-in-anime {
+  opacity: 0;
+}
+.hero .carousel .carousel-item .fade-in-anime-para {
   opacity: 0;
 }
 .hero .carousel .default-item-style {
