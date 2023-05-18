@@ -100,6 +100,9 @@ h5 {
     @include mQ(1300px) {
         font-size: 40px;
     }
+    @include mQ(950px) {
+        font-size: 32px;
+    }
 }
 
 .size-30 {
@@ -112,7 +115,7 @@ h5 {
         font-size: 14px;
     }
     @include mQ(1300px) {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -131,6 +134,9 @@ h5 {
     }
     @include mQ(1300px) {
         font-size: 18px;
+    }
+    @include mQ(950px) {
+        font-size: 16px;
     }
 }
 
@@ -221,6 +227,12 @@ header {
             .menu-number {
                 list-style: none;
                 padding-left: 25px;
+                @include mQ(1050px) {
+                    padding-left: 14px;
+                }
+                @include mQ(1300px) {
+                    padding-left: 14px;
+                }
                 position: relative;
                 a {
                     color: #d1b38d !important;
@@ -307,12 +319,21 @@ header {
     justify-content: center;
     width: 80%;
                     }
+                    @include mQ(950px){
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-start;
+                        width: 80%;
+                    }
 
                     .logo-text-img-contain {
                         display: flex;
                         align-items: center;
                         flex-direction: column;
                         justify-content: flex-end;
+                        @include mQ(950px){
+                            width: 41% !important;
+                        }
                         img{
                             @include mQ(1450px){
                                 max-width: 50% !important;
@@ -323,6 +344,9 @@ header {
                     .heading-contain {
                         border-left: 2px solid #c39f71;
                         padding-left: 3rem;
+                        @include mQ(950px){
+                            padding-left: 2rem;
+                        }
                         h1 {
                             margin-bottom: 15px;
                             line-height: 30px;
@@ -332,11 +356,17 @@ header {
                                 @include mQ(1300px){
                                     line-height: 45px;
                                 }
+                                @include mQ(950px){
+                                    line-height: 35px;
+                                }
                             }
                             .first-contain {
                                 line-height: 75px;
                                 @include mQ(1300px){
                                     line-height: 55px;
+                                }
+                                @include mQ(950px){
+                                    line-height: 40px;
                                 }
                             }
                         }
@@ -346,6 +376,9 @@ header {
                         margin-bottom: 0;
                         @include mQ(1300px){
                             line-height: 25px;
+                        }
+                        @include mQ(950px){
+                            line-height: 22px;
                         }
                     }
                 }
@@ -381,6 +414,12 @@ header {
                             transform: scale(1.2);
                         }
                     }
+                   
+                }
+            }
+            .banner-img{
+                @include mQ(950px){
+                    width: 177% !important;
                 }
             }
             .fade-in-anime {
@@ -396,6 +435,9 @@ header {
             .cust-line-height{
                 line-height: 57px !important;
     letter-spacing: -1px !important;
+    @include mQ(950px){
+        line-height: 38px !important;
+    }
             }
         }
 
@@ -434,6 +476,11 @@ header {
     padding-bottom: 4rem;
     background-size: contain;
     margin-bottom: 4rem;
+    @include mQ(950px){
+        background-size: cover;
+        padding-top: 0;
+        margin-top: 4rem;
+    }
 
     .lifespace-contain {
         height: 63%;
@@ -446,6 +493,15 @@ header {
         @include mQ(1050px){
             width: 100%;
             margin-left: 2rem;
+        }
+        @include mQ(1300px){
+            width: 100%;
+            margin-left: 2rem;
+        }
+        @include mQ(950px){
+            width: 100%;
+    margin-left: 2rem;
+    margin-top: 4rem;
         }
 
         ul {
@@ -467,6 +523,10 @@ header {
     background-size: contain;
     @include mQ(1050px){
         padding: 2rem 0;
+    }
+    @include mQ(950px){
+        background-size: cover;
+        padding: 0rem 0;
     }
     .image-col{
         @include mQ(1050px){
@@ -500,6 +560,10 @@ header {
     align-items: flex-start;
     margin-right: 0rem;
         }
+        @include mQ(950px){
+            padding-top: 4rem;
+    padding-bottom: 4rem;
+        }
     }
 }
 // about us section end
@@ -518,6 +582,9 @@ header {
     overflow: hidden;
     @include mQ(1050px){
         height: 624px;
+    }
+    @include mQ(950px){
+        height: 568px;
     }
     .img-map {
         transform: translateY(-140px);
@@ -556,6 +623,13 @@ header {
             left: 14%;
             width: 70% !important;
         }
+        @include mQ(950px){
+            left: 50%;
+            top: -225%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+            width: 90% !important;
+        }
 
         .overlooking-image-text {
             width: 37%;
@@ -563,6 +637,11 @@ header {
             @include mQ(1050px){
                 width: 80%;
     margin-left: 3rem;
+            }
+            @include mQ(950px){
+                width: 100%;
+    margin-left: 0rem;
+    padding: 0rem 1rem 0 1.5rem;
             }
         }
 
@@ -594,11 +673,19 @@ header {
         @include mQ(1050px){
             min-height: 98vh !important;
         }
+        @include mQ(950px){
+            min-height: auto !important;
+        }
     }
     .cust-contain {
         padding: 0 13.5%;
         .gx-5 {
             --bs-gutter-x: 4rem !important;
+        }
+    }
+    .left-card{
+        @include mQ(950px){
+            margin-bottom: 5rem;
         }
     }
 }
@@ -633,9 +720,17 @@ header {
             width: 200px;
     height: 178px;
         }
+        @include mQ(950px){
+            width: 355px;
+    height: 345px;
+    margin-bottom: 5rem;
+        }
         img{
             @include mQ(1050px){
                 width: 160% !important;
+            }
+            @include mQ(950px){
+                width: 185% !important;
             }
         }
         h4 {
