@@ -294,6 +294,13 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .hero .carousel .carousel-item .fade-in-anime-para {
   opacity: 0;
 }
+.hero .carousel .carousel-item .one-number {
+  letter-spacing: -15px !important;
+}
+.hero .carousel .carousel-item .cust-line-height {
+  line-height: 57px !important;
+  letter-spacing: -1px !important;
+}
 .hero .carousel .default-item-style {
   display: flex;
   align-items: flex-end;
