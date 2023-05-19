@@ -697,9 +697,9 @@ header {
     padding: 0rem 1rem 0 1.5rem;
             }
             @include mQ(450px){
-                background: #000000c2;
-                padding: 1.5rem 1rem 1rem 1.5rem;
-                border-radius: 15px;
+                background: #000000c2 !important;
+                padding: 1.5rem 1rem 1rem 1.5rem !important;
+                border-radius: 15px !important;
             }
             h3{
                 @include mQ(450px){
@@ -811,6 +811,9 @@ header {
             }
             @include mQ(950px){
                 width: 185% !important;
+            }
+            @include mQ(450px){
+                width: 200% !important;
             }
         }
         h4 {
