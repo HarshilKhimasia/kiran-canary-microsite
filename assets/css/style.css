@@ -627,6 +627,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     margin: auto 0;
   }
 }
+@media screen and (max-width: 1400px) {
+  .about-us .image-col {
+    margin: auto 0;
+  }
+}
 .about-us .lifespace-contain {
   height: 63%;
   width: 66%;
@@ -753,7 +758,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     top: -139%;
     left: 50%;
     transform: translateX(-50%);
-    width: 70% !important;
+    width: 80% !important;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -848,7 +853,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 }
 @media screen and (max-width: 1300px) {
   .ecoluxe .villas-content-conatin {
-    min-height: auto !important;
+    min-height: 60vh !important;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -1153,4 +1158,13 @@ footer input.no-arrows {
   .leaf-size {
     max-width: 60% !important;
   }
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+a:hover {
+  color: #debe95;
 }/*# sourceMappingURL=style.css.map */
