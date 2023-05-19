@@ -7,7 +7,7 @@ let tl = gsap.timeline({
       pin: false,   // pin the trigger element while active
       start: "50% bottom", // when the top of the trigger hits the top of the viewport
       end: "30%", // end after scrolling 500px beyond the start
-      markers: true,
+      markers: false,
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       
     }
@@ -22,7 +22,7 @@ let tl = gsap.timeline({
       pin: false,   // pin the trigger element while active
       start: "0% 50%", // when the top of the trigger hits the top of the viewport
       end: "100%", // end after scrolling 500px beyond the start
-      markers: true,
+      markers: false,
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       
     }
@@ -37,7 +37,7 @@ let tl = gsap.timeline({
       pin: false,   // pin the trigger element while active
       start: "top 80%", // when the top of the trigger hits the top of the viewport
       end: "5%", // end after scrolling 500px beyond the start
-      markers: true,
+      markers: false,
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       
     }
@@ -52,7 +52,7 @@ let tl = gsap.timeline({
       pin: false,   // pin the trigger element while active
       start: "bottom 95%", // when the top of the trigger hits the top of the viewport
       end: "5%", // end after scrolling 500px beyond the start
-      markers: true,
+      markers: false,
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       
     }
@@ -67,7 +67,7 @@ let tl = gsap.timeline({
       pin: false,   // pin the trigger element while active
       start: "top 80%", // when the top of the trigger hits the top of the viewport
       end: "10%", // end after scrolling 500px beyond the start
-      markers: true,
+      markers: false,
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       
     }
@@ -82,10 +82,55 @@ let tl = gsap.timeline({
       pin: false,   // pin the trigger element while active
       start: "top 80%", // when the top of the trigger hits the top of the viewport
       end: "10%", // end after scrolling 500px beyond the start
-      markers: true,
+      markers: false,
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       
     }
   });
 
   tlecoLeaf.to(".eco-leaf", {x: 34, duration: 10,});
+
+  let tlecobottomLeaf = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: ".ecoluxe",
+      pin: false,   // pin the trigger element while active
+      start: "20% top", // when the top of the trigger hits the top of the viewport
+      end: "80%", // end after scrolling 500px beyond the start
+      markers: false,
+      scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      
+    }
+  });
+
+  tlecobottomLeaf.to(".eco-bottom-leaf", {x: -30, duration: 10,});
+
+  let tlworldLeaf = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: ".the-world",
+      pin: false,   // pin the trigger element while active
+      start: "top 80%", // when the top of the trigger hits the top of the viewport
+      end: "30%", // end after scrolling 500px beyond the start
+      markers: false,
+      scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      
+    }
+  });
+
+  tlworldLeaf.to(".world-leaf", {x: 26, duration: 10,});
+
+  let tlfooterLeaf = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: ".footer",
+      pin: false,   // pin the trigger element while active
+      start: "top bottom", // when the top of the trigger hits the top of the viewport
+      end: "10%", // end after scrolling 500px beyond the start
+      markers: false,
+      scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      
+    }
+  });
+
+  tlfooterLeaf.to(".footer-leaf", {x: 13, duration: 10,});
