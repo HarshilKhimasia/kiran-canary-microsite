@@ -1158,4 +1158,13 @@ footer input.no-arrows {
   .leaf-size {
     max-width: 60% !important;
   }
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+a:hover {
+  color: #debe95;
 }/*# sourceMappingURL=style.css.map */
