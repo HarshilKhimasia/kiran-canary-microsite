@@ -818,6 +818,11 @@ header {
         right: 0;
         transform: translateX(105%); 
     }
+    .eco-bottom-leaf{
+        bottom: 0;
+    left: 0;
+    transform: translateX(-105%);
+    }
 }
 // ecoluxe end
 
@@ -888,6 +893,11 @@ header {
             margin: 0 0 1rem 1rem;
         }
     }
+    .world-leaf{
+        top: 0;
+    right: 0;
+    transform: translateX(105%);
+    }
 }
 // the-world end
 
@@ -897,6 +907,11 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 4rem 0 0 0;
+    .footer-leaf{
+        top: 0;
+        right: 0;
+        transform: translateX(105%) translateY(28%); 
+    }
     .cust-cont {
         padding: 0 15rem;
         @include mQ(1450px){
