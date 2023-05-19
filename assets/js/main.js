@@ -12,7 +12,7 @@ window.addEventListener('scroll', function () {
     header.style.paddingBottom = '0rem';
     header.style.paddingLeft = '18rem';
     img.style.maxWidth = '70%';
-  } else if(window.pageYOffset > 200 && screenWidth <= 1650){
+  } else if (window.pageYOffset > 200 && screenWidth <= 1650) {
     header.style.background = 'rgb(0 0 0 / 100%)';
     header.style.paddingTop = '0rem';
     header.style.paddingRight = '1rem';
@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
   }
   else if (screenWidth <= 1650) {
     header.style.background = 'rgb(0 0 0 / 90%)';
-    
+
     header.style.paddingTop = '1rem';
     header.style.paddingRight = '1rem';
     header.style.paddingBottom = '1rem';
@@ -30,7 +30,7 @@ window.addEventListener('scroll', function () {
     img.style.maxWidth = '100%';
   } else {
     header.style.background = 'rgb(0 0 0 / 90%)';
-    
+
     header.style.paddingTop = '1rem';
     header.style.paddingRight = '7rem';
     header.style.paddingBottom = '1rem';
@@ -62,7 +62,7 @@ img.style.maxWidth = '100%';
 let mybutton = document.getElementById("scroll-top-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -90,13 +90,13 @@ new simpleParallax(image2, {
 // simple parallax end
 
 // Nav link active start
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", function () {
   var navLinks = document.getElementsByClassName("cust-nav-link");
   for (var i = 0; i < navLinks.length; i++) {
     var sectionId = navLinks[i].getAttribute("href").slice(1);
     var section = document.getElementById(sectionId);
     var rect = section.getBoundingClientRect();
-    
+
     if (rect.top >= 0 && rect.top <= window.innerHeight) {
       navLinks[i].classList.add("active");
     } else {
@@ -105,13 +105,13 @@ document.addEventListener("scroll", function() {
   }
 });
 
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", function () {
   var navLinks = document.getElementsByClassName("cust-nav-access");
   for (var i = 0; i < navLinks.length; i++) {
     var sectionId = navLinks[i].getAttribute("href").slice(1);
     var section = document.getElementById(sectionId);
     var rect = section.getBoundingClientRect();
-    
+
     if (rect.top >= 0 && rect.top <= 0.5 * window.innerHeight) {
       navLinks[i].classList.add("active");
     } else {
@@ -120,13 +120,13 @@ document.addEventListener("scroll", function() {
   }
 });
 
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", function () {
   var navLinks = document.getElementsByClassName("cust-nav-contact");
   for (var i = 0; i < navLinks.length; i++) {
     var sectionId = navLinks[i].getAttribute("href").slice(1);
     var section = document.getElementById(sectionId);
     var rect = section.getBoundingClientRect();
-    
+
     if (rect.bottom >= 0 && rect.bottom <= window.innerHeight) {
       navLinks[i].classList.add("active");
     } else {
