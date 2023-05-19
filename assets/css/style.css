@@ -772,9 +772,9 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 }
 @media screen and (max-width: 450px) {
   .overlooking .img-contain .overlooking-image-text {
-    background: rgba(0, 0, 0, 0.7607843137);
-    padding: 1.5rem 1rem 1rem 1.5rem;
-    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7607843137) !important;
+    padding: 1.5rem 1rem 1rem 1.5rem !important;
+    border-radius: 15px !important;
   }
 }
 @media screen and (max-width: 450px) {
@@ -906,6 +906,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 950px) {
   .the-world .img-block img {
     width: 185% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .the-world .img-block img {
+    width: 200% !important;
   }
 }
 .the-world .img-block h4 {
