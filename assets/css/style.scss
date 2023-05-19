@@ -356,6 +356,9 @@ header {
                         justify-content: flex-start;
                         width: 80%;
                     }
+                    @include mQ(450px){
+                        margin-top: 4rem;
+                    }
 
                     .logo-text-img-contain {
                         display: flex;
@@ -679,8 +682,8 @@ header {
             width: 90% !important;
         }
         @include mQ(450px){
-            overflow: hidden;
-            padding: 0 1rem;
+            overflow: hidden !important;
+            padding: 0 1rem !important;
             width: 100% !important;
         }
 
@@ -749,9 +752,15 @@ header {
         @include mQ(950px){
             min-height: auto !important;
         }
+        @include mQ(950px){
+            padding: 2rem 1rem 2rem 1rem;
+        }
     }
     .cust-contain {
         padding: 0 13.5%;
+        @include mQ(450px){
+            padding: 0 5.5%;
+        }
         .gx-5 {
             --bs-gutter-x: 4rem !important;
         }
@@ -772,7 +781,10 @@ header {
     padding: 8rem 0 9rem 0;
     margin-bottom: 5rem;
     @include mQ(450px){
-        padding: 5rem 0 6rem 0;
+        padding: 4rem 0 2rem 0;
+        background-size: 35rem;
+        background-position: top;
+        margin-bottom: 0rem;
     }
     .cust-cont {
         padding: 0 15rem;
@@ -781,6 +793,9 @@ header {
         }
         @include mQ(1650px){
             padding: 0 2rem;
+        }
+        @include mQ(450px){
+            padding: 0 1rem;
         }
     }
     .img-block {
@@ -803,7 +818,8 @@ header {
         }
         @include mQ(450px){
             width: 100%;
-            margin-bottom: 2rem;
+            margin-bottom: 0rem;
+    margin-top: 3rem;
         }
         img{
             @include mQ(1050px){
@@ -814,6 +830,7 @@ header {
             }
             @include mQ(450px){
                 width: 200% !important;
+                transform: translateX(-170px);
             }
         }
         h4 {
