@@ -223,6 +223,7 @@ header {
     .navbar {
         .navbar-toggler-icon{
             background-image: url('../img/menu-icon.png') !important;
+            background-size: 111%;
         }
         .navbar-brand{
            
@@ -524,6 +525,12 @@ header {
         margin-top: 4rem;
     }
 
+    .leaf {
+        bottom: 0;
+        right: 0;
+        transform: translateX(-108px) translateY(-350px) rotate(66deg);
+    }
+
     .lifespace-contain {
         height: 63%;
         width: 57%;
@@ -563,6 +570,9 @@ header {
     background-position: left;
     padding: 5rem 0;
     background-size: contain;
+    .leaf-about{
+        transform: translate(45px, -594px) rotate(-46.9998deg);
+    }
     @include mQ(1050px){
         padding: 2rem 0;
     }
@@ -575,6 +585,8 @@ header {
             margin: auto 0;
         }
     }
+
+    
 
     .lifespace-contain {
         height: 63%;
@@ -615,6 +627,16 @@ header {
     padding-bottom: 3rem;
     @include mQ(1450px){
         padding-top: 5rem;
+    }
+    .accessibility-leaf{
+        bottom: 0;
+    left: 0;
+    transform: translateX(-104%) translateY(-35%);
+    }
+    .bottom-access-leaf{
+        bottom: 0;
+    right: 0;
+    transform: translateX(-29%) translateY(105%);
     }
 }
 
@@ -723,6 +745,12 @@ header {
             }
         }
     }
+    .overlooking-leaf{
+        top: 0;
+    left: 0;
+    transform: translateX(-105%) translateY(118%);
+    }
+    
 }
 
 // overlooking end
@@ -769,6 +797,26 @@ header {
         @include mQ(950px){
             margin-bottom: 5rem;
         }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon{
+            background-color: #000;
+            
+            padding: 25px;
+
+        }
+        .carousel-control-next, .carousel-control-prev{
+            opacity: .7;
+            transition: all .5s ease-in;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .eco-leaf{
+        top: 0;
+        right: 0;
+        transform: translateX(105%); 
     }
 }
 // ecoluxe end

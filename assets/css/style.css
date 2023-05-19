@@ -241,6 +241,7 @@ header #brand-logo {
 }
 header .navbar .navbar-toggler-icon {
   background-image: url("../img/menu-icon.png") !important;
+  background-size: 111%;
 }
 @media screen and (max-width: 1300px) {
   header .navbar .navbar-brand {
@@ -559,6 +560,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     margin-top: 4rem;
   }
 }
+.lifespace .leaf {
+  bottom: 0;
+  right: 0;
+  transform: translateX(-108px) translateY(-350px) rotate(66deg);
+}
 .lifespace .lifespace-contain {
   height: 63%;
   width: 57%;
@@ -601,6 +607,9 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   background-position: left;
   padding: 5rem 0;
   background-size: contain;
+}
+.about-us .leaf-about {
+  transform: translate(45px, -594px) rotate(-46.9998deg);
 }
 @media screen and (max-width: 1050px) {
   .about-us {
@@ -663,6 +672,16 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   .accessibility {
     padding-top: 5rem;
   }
+}
+.accessibility .accessibility-leaf {
+  bottom: 0;
+  left: 0;
+  transform: translateX(-104%) translateY(-35%);
+}
+.accessibility .bottom-access-leaf {
+  bottom: 0;
+  right: 0;
+  transform: translateX(-29%) translateY(105%);
 }
 
 .maps-section {
@@ -798,6 +817,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     transform: translateX(-360px) !important;
   }
 }
+.overlooking .overlooking-leaf {
+  top: 0;
+  left: 0;
+  transform: translateX(-105%) translateY(118%);
+}
 
 .ecoluxe {
   padding-bottom: 5rem;
@@ -855,6 +879,22 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   .ecoluxe .left-card {
     margin-bottom: 5rem;
   }
+}
+.ecoluxe .left-card .carousel-control-prev-icon, .ecoluxe .left-card .carousel-control-next-icon {
+  background-color: #000;
+  padding: 25px;
+}
+.ecoluxe .left-card .carousel-control-next, .ecoluxe .left-card .carousel-control-prev {
+  opacity: 0.7;
+  transition: all 0.5s ease-in;
+}
+.ecoluxe .left-card .carousel-control-next:hover, .ecoluxe .left-card .carousel-control-prev:hover {
+  opacity: 1;
+}
+.ecoluxe .eco-leaf {
+  top: 0;
+  right: 0;
+  transform: translateX(105%);
 }
 
 .the-world {
