@@ -751,14 +751,16 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 1450px) {
   .overlooking .img-contain {
     top: -139%;
-    left: 14%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70% !important;
   }
 }
 @media screen and (max-width: 1050px) {
   .overlooking .img-contain {
     top: -175%;
-    left: 14%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70% !important;
   }
 }
@@ -880,15 +882,18 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     margin-bottom: 5rem;
   }
 }
-.ecoluxe .left-card .carousel-control-prev-icon, .ecoluxe .left-card .carousel-control-next-icon {
+.ecoluxe .left-card .carousel-control-prev-icon,
+.ecoluxe .left-card .carousel-control-next-icon {
   background-color: #000;
   padding: 25px;
 }
-.ecoluxe .left-card .carousel-control-next, .ecoluxe .left-card .carousel-control-prev {
+.ecoluxe .left-card .carousel-control-next,
+.ecoluxe .left-card .carousel-control-prev {
   opacity: 0.7;
   transition: all 0.5s ease-in;
 }
-.ecoluxe .left-card .carousel-control-next:hover, .ecoluxe .left-card .carousel-control-prev:hover {
+.ecoluxe .left-card .carousel-control-next:hover,
+.ecoluxe .left-card .carousel-control-prev:hover {
   opacity: 1;
 }
 .ecoluxe .eco-leaf {
@@ -1142,4 +1147,10 @@ footer input.no-arrows {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1450px) {
+  .leaf-size {
+    max-width: 60% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
