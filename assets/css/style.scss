@@ -90,6 +90,9 @@ h5 {
     @include mQ(1450px) {
         font-size: 26px;
     }
+    @include mQ(450px) {
+        font-size: 24px;
+    }
 }
 
 .size-60 {
@@ -109,6 +112,12 @@ h5 {
     font-size: 30px;
 }
 
+.mob-size-14{
+    @include mQ(450px) {
+        font-size: 12px !important;
+    }
+}
+
 .size-16 {
     font-size: 16px;
     @include mQ(1450px) {
@@ -118,6 +127,7 @@ h5 {
         font-size: 14px;
     }
 }
+
 
 .size-18 {
     font-size: 18px;
@@ -211,12 +221,19 @@ header {
         }
     }
     .navbar {
+        .navbar-toggler-icon{
+            background-image: url('../img/menu-icon.png') !important;
+        }
         .navbar-brand{
+           
             @include mQ(1300px) {
                 width: 33% ;
             }
             @include mQ(1050px) {
                 width: 20% !important;
+            }
+            @include mQ(450px) {
+                width: 60% !important;
             }
             
         }
@@ -232,6 +249,10 @@ header {
                 }
                 @include mQ(1300px) {
                     padding-left: 14px;
+                }
+                @include mQ(450px) {
+                    padding-left: 0px;
+                    text-align: center;
                 }
                 position: relative;
                 a {
@@ -249,6 +270,9 @@ header {
                     left: 0;
                     height: 150%;
                     width: 1px;
+                    @include mQ(450px) {
+                        content: none;
+                    }
                 }
             }
 
@@ -258,6 +282,10 @@ header {
                 justify-content: center;
                 @include mQ(1450px) {
                     width: 82%;
+                }
+                @include mQ(450px) {
+                    width: 100%;
+                    align-items: center;
                 }
 
                 .nav-item {
@@ -292,6 +320,9 @@ header {
                             right: 0;
                             height: 50%;
                             width: 2px;
+                            @include mQ(450px){
+                                content: none;
+                            }
                         }
                     }
                 }
@@ -347,6 +378,11 @@ header {
                         @include mQ(950px){
                             padding-left: 2rem;
                         }
+                        @include mQ(450px){
+                            padding-left: 1rem;
+                            margin-left: 1.5rem;
+                            border-left: 5px solid #c39f71;
+                        }
                         h1 {
                             margin-bottom: 15px;
                             line-height: 30px;
@@ -388,11 +424,11 @@ header {
         .carousel-item {
             &.active {
                 .fade-in-anime{
-                    animation: fade-in 5s forwards ease;
+                    animation: fade-in 3s forwards ease;
                 }
                 .fade-in-anime-para{
-                    animation: fade-in-para 5s forwards ease;
-                    animation-delay: .5s;
+                    animation: fade-in-para 3s forwards ease;
+                    animation-delay: .3s;
                 }
                 @keyframes fade-in {
                     0%   {opacity: 0;}
@@ -420,6 +456,9 @@ header {
             .banner-img{
                 @include mQ(950px){
                     width: 177% !important;
+                }
+                @include mQ(450px){
+                    width: 334% !important;
                 }
             }
             .fade-in-anime {
@@ -586,6 +625,9 @@ header {
     @include mQ(950px){
         height: 568px;
     }
+    @include mQ(450px){
+        height: 710px;
+    }
     .img-map {
         transform: translateY(-140px);
         @include mQ(1450px){
@@ -596,6 +638,9 @@ header {
         }
         @include mQ(1050px){
             transform: translateY(-30px) !important;
+        }
+        @include mQ(450px){
+            max-width: 150% !important;
         }
     }
 }
@@ -609,6 +654,9 @@ header {
     }
     @include mQ(1050px){
         padding: 4rem 0;
+    }
+    @include mQ(450px){
+        padding: 6rem 0;
     }
 
     .img-contain {
@@ -630,6 +678,11 @@ header {
     transform: translateX(-50%);
             width: 90% !important;
         }
+        @include mQ(450px){
+            overflow: hidden;
+            padding: 0 1rem;
+            width: 100% !important;
+        }
 
         .overlooking-image-text {
             width: 37%;
@@ -643,12 +696,28 @@ header {
     margin-left: 0rem;
     padding: 0rem 1rem 0 1.5rem;
             }
+            @include mQ(450px){
+                background: #000000c2;
+                padding: 1.5rem 1rem 1rem 1.5rem;
+                border-radius: 15px;
+            }
+            h3{
+                @include mQ(450px){
+                    margin-top: 0.5rem;
+                }
+            }
         }
 
         .main-div {
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            img{
+                @include mQ(450px){
+                    max-width: 290% !important;
+                    transform: translateX(-360px) !important;
+                }
+            }
         }
     }
 }
@@ -659,6 +728,10 @@ header {
 .ecoluxe {
     padding-bottom: 5rem;
     padding-top: 6rem;
+    @include mQ(450px){
+        padding-bottom: 5rem;
+    padding-top: 0rem;
+    }
     .villas-content-conatin {
         background-color: #f7f7f7;
         padding: 2rem 4rem 2rem 2rem;
@@ -698,6 +771,9 @@ header {
     background-size: cover;
     padding: 8rem 0 9rem 0;
     margin-bottom: 5rem;
+    @include mQ(450px){
+        padding: 5rem 0 6rem 0;
+    }
     .cust-cont {
         padding: 0 15rem;
         @include mQ(1450px){
@@ -724,6 +800,10 @@ header {
             width: 355px;
     height: 345px;
     margin-bottom: 5rem;
+        }
+        @include mQ(450px){
+            width: 100%;
+            margin-bottom: 2rem;
         }
         img{
             @include mQ(1050px){

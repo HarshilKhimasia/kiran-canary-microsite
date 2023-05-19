@@ -87,6 +87,11 @@ h5 {
     font-size: 26px;
   }
 }
+@media screen and (max-width: 450px) {
+  .size-36 {
+    font-size: 24px;
+  }
+}
 
 .size-60 {
   font-size: 60px;
@@ -109,6 +114,12 @@ h5 {
 
 .size-30 {
   font-size: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .mob-size-14 {
+    font-size: 12px !important;
+  }
 }
 
 .size-16 {
@@ -228,6 +239,9 @@ header #brand-logo {
     max-width: 130% !important;
   }
 }
+header .navbar .navbar-toggler-icon {
+  background-image: url("../img/menu-icon.png") !important;
+}
 @media screen and (max-width: 1300px) {
   header .navbar .navbar-brand {
     width: 33%;
@@ -236,6 +250,11 @@ header #brand-logo {
 @media screen and (max-width: 1050px) {
   header .navbar .navbar-brand {
     width: 20% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .navbar .navbar-brand {
+    width: 60% !important;
   }
 }
 header .navbar .navbar-collapse {
@@ -257,6 +276,12 @@ header .navbar .navbar-collapse .menu-number {
     padding-left: 14px;
   }
 }
+@media screen and (max-width: 450px) {
+  header .navbar .navbar-collapse .menu-number {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
 header .navbar .navbar-collapse .menu-number a {
   color: #d1b38d !important;
   text-decoration: none;
@@ -271,6 +296,11 @@ header .navbar .navbar-collapse .menu-number::after {
   height: 150%;
   width: 1px;
 }
+@media screen and (max-width: 450px) {
+  header .navbar .navbar-collapse .menu-number::after {
+    content: none;
+  }
+}
 header .navbar .navbar-collapse .navbar-nav {
   width: 70%;
   display: flex;
@@ -279,6 +309,12 @@ header .navbar .navbar-collapse .navbar-nav {
 @media screen and (max-width: 1450px) {
   header .navbar .navbar-collapse .navbar-nav {
     width: 82%;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .navbar .navbar-collapse .navbar-nav {
+    width: 100%;
+    align-items: center;
   }
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item:last-child .nav-link::after {
@@ -305,6 +341,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   right: 0;
   height: 50%;
   width: 2px;
+}
+@media screen and (max-width: 450px) {
+  header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+    content: none;
+  }
 }
 
 .hero .carousel .carousel-inner .first-item {
@@ -360,6 +401,13 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     padding-left: 2rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .hero .carousel .carousel-inner .first-item .logo-text .heading-contain {
+    padding-left: 1rem;
+    margin-left: 1.5rem;
+    border-left: 5px solid #c39f71;
+  }
+}
 .hero .carousel .carousel-inner .first-item .logo-text .heading-contain h1 {
   margin-bottom: 15px;
   line-height: 30px;
@@ -405,11 +453,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   }
 }
 .hero .carousel .carousel-item.active .fade-in-anime {
-  animation: fade-in 5s forwards ease;
+  animation: fade-in 3s forwards ease;
 }
 .hero .carousel .carousel-item.active .fade-in-anime-para {
-  animation: fade-in-para 5s forwards ease;
-  animation-delay: 0.5s;
+  animation: fade-in-para 3s forwards ease;
+  animation-delay: 0.3s;
 }
 @keyframes fade-in {
   0% {
@@ -441,6 +489,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 950px) {
   .hero .carousel .carousel-item .banner-img {
     width: 177% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero .carousel .carousel-item .banner-img {
+    width: 334% !important;
   }
 }
 .hero .carousel .carousel-item .fade-in-anime {
@@ -621,6 +674,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     height: 568px;
   }
 }
+@media screen and (max-width: 450px) {
+  .maps-section {
+    height: 710px;
+  }
+}
 .maps-section .img-map {
   transform: translateY(-140px);
 }
@@ -639,6 +697,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     transform: translateY(-30px) !important;
   }
 }
+@media screen and (max-width: 450px) {
+  .maps-section .img-map {
+    max-width: 150% !important;
+  }
+}
 
 .overlooking {
   padding: 22rem 0;
@@ -651,6 +714,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 1050px) {
   .overlooking {
     padding: 4rem 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .overlooking {
+    padding: 6rem 0;
   }
 }
 .overlooking .img-contain {
@@ -678,6 +746,13 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     width: 90% !important;
   }
 }
+@media screen and (max-width: 450px) {
+  .overlooking .img-contain {
+    overflow: hidden;
+    padding: 0 1rem;
+    width: 100% !important;
+  }
+}
 .overlooking .img-contain .overlooking-image-text {
   width: 37%;
   margin-left: 3rem;
@@ -695,15 +770,39 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     padding: 0rem 1rem 0 1.5rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .overlooking .img-contain .overlooking-image-text {
+    background: rgba(0, 0, 0, 0.7607843137);
+    padding: 1.5rem 1rem 1rem 1.5rem;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .overlooking .img-contain .overlooking-image-text h3 {
+    margin-top: 0.5rem;
+  }
+}
 .overlooking .img-contain .main-div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+@media screen and (max-width: 450px) {
+  .overlooking .img-contain .main-div img {
+    max-width: 290% !important;
+    transform: translateX(-360px) !important;
+  }
+}
 
 .ecoluxe {
   padding-bottom: 5rem;
   padding-top: 6rem;
+}
+@media screen and (max-width: 450px) {
+  .ecoluxe {
+    padding-bottom: 5rem;
+    padding-top: 0rem;
+  }
 }
 .ecoluxe .villas-content-conatin {
   background-color: #f7f7f7;
@@ -750,6 +849,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   padding: 8rem 0 9rem 0;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 450px) {
+  .the-world {
+    padding: 5rem 0 6rem 0;
+  }
+}
 .the-world .cust-cont {
   padding: 0 15rem;
 }
@@ -786,6 +890,12 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     width: 355px;
     height: 345px;
     margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .the-world .img-block {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 1050px) {
