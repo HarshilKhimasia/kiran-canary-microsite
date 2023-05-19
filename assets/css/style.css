@@ -375,6 +375,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     width: 80%;
   }
 }
+@media screen and (max-width: 450px) {
+  .hero .carousel .carousel-inner .first-item .logo-text {
+    margin-top: 4rem;
+  }
+}
 .hero .carousel .carousel-inner .first-item .logo-text .logo-text-img-contain {
   display: flex;
   align-items: center;
@@ -748,8 +753,8 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 }
 @media screen and (max-width: 450px) {
   .overlooking .img-contain {
-    overflow: hidden;
-    padding: 0 1rem;
+    overflow: hidden !important;
+    padding: 0 1rem !important;
     width: 100% !important;
   }
 }
@@ -830,8 +835,18 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     min-height: auto !important;
   }
 }
+@media screen and (max-width: 950px) {
+  .ecoluxe .villas-content-conatin {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
 .ecoluxe .cust-contain {
   padding: 0 13.5%;
+}
+@media screen and (max-width: 450px) {
+  .ecoluxe .cust-contain {
+    padding: 0 5.5%;
+  }
 }
 .ecoluxe .cust-contain .gx-5 {
   --bs-gutter-x: 4rem !important;
@@ -851,7 +866,10 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 }
 @media screen and (max-width: 450px) {
   .the-world {
-    padding: 5rem 0 6rem 0;
+    padding: 4rem 0 2rem 0;
+    background-size: 35rem;
+    background-position: top;
+    margin-bottom: 0rem;
   }
 }
 .the-world .cust-cont {
@@ -865,6 +883,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 1650px) {
   .the-world .cust-cont {
     padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .the-world .cust-cont {
+    padding: 0 1rem;
   }
 }
 .the-world .img-block {
@@ -895,7 +918,8 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 450px) {
   .the-world .img-block {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -911,6 +935,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 @media screen and (max-width: 450px) {
   .the-world .img-block img {
     width: 200% !important;
+    transform: translateX(-170px);
   }
 }
 .the-world .img-block h4 {
