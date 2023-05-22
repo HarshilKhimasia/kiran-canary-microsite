@@ -239,6 +239,16 @@ header #brand-logo {
     max-width: 130% !important;
   }
 }
+@media screen and (max-width: 900px) {
+  header #brand-logo {
+    max-width: 235% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  header #brand-logo {
+    max-width: 130% !important;
+  }
+}
 header .navbar .navbar-toggler-icon {
   background-image: url("../img/menu-icon.png") !important;
   background-size: 111%;
@@ -297,7 +307,7 @@ header .navbar .navbar-collapse .menu-number::after {
   height: 150%;
   width: 1px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 900px) {
   header .navbar .navbar-collapse .menu-number::after {
     content: none;
   }
@@ -316,6 +326,12 @@ header .navbar .navbar-collapse .navbar-nav {
   header .navbar .navbar-collapse .navbar-nav {
     width: 100%;
     align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .navbar .navbar-collapse .navbar-nav {
+    width: 100%;
+    align-items: start;
   }
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item:last-child .nav-link::after {
@@ -343,7 +359,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   height: 50%;
   width: 2px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 900px) {
   header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     content: none;
   }
@@ -563,7 +579,17 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .lifespace .leaf {
   bottom: 0;
   right: 0;
-  transform: translateX(-108px) translateY(-350px) rotate(66deg);
+  transform: translateX(105%);
+}
+@media screen and (max-width: 1450px) {
+  .lifespace .leaf {
+    transform: translateX(105%) translateY(30%);
+  }
+}
+@media screen and (max-width: 1700px) {
+  .lifespace .leaf {
+    transform: translateX(105%) translateY(30%);
+  }
 }
 .lifespace .lifespace-contain {
   height: 63%;
@@ -593,9 +619,23 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
     margin-top: 4rem;
   }
 }
+@media screen and (max-width: 1450px) {
+  .lifespace .lifespace-contain {
+    width: 100%;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .lifespace .lifespace-contain {
+    width: 100%;
+    height: 80%;
+    margin-left: 2rem;
+  }
+}
 .lifespace .lifespace-contain ul {
   padding-left: 0;
   height: 100%;
+  line-height: 120%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -609,7 +649,9 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   background-size: contain;
 }
 .about-us .leaf-about {
-  transform: translate(45px, -594px) rotate(-46.9998deg);
+  transform: translateX(-105%) translateY(34%);
+  bottom: 0;
+  left: 0;
 }
 @media screen and (max-width: 1050px) {
   .about-us {
@@ -623,6 +665,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   }
 }
 @media screen and (max-width: 1050px) {
+  .about-us .image-col {
+    margin: auto 0;
+  }
+}
+@media screen and (max-width: 1400px) {
   .about-us .image-col {
     margin: auto 0;
   }
@@ -704,26 +751,31 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   }
 }
 .maps-section .img-map {
-  transform: translateY(-140px);
+  transform: translateY(-200px);
 }
 @media screen and (max-width: 1450px) {
   .maps-section .img-map {
-    transform: translateY(-97px) !important;
+    transform: translateY(-146px);
   }
 }
 @media screen and (max-width: 1650px) {
   .maps-section .img-map {
-    transform: translateY(-40px);
+    transform: translateY(-109px);
   }
 }
 @media screen and (max-width: 1050px) {
   .maps-section .img-map {
-    transform: translateY(-30px) !important;
+    transform: translateY(-80px) !important;
   }
 }
 @media screen and (max-width: 450px) {
   .maps-section .img-map {
     max-width: 150% !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .maps-section .img-map {
+    transform: translateY(-115px);
   }
 }
 
@@ -748,12 +800,17 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .overlooking .img-contain {
   top: -15%;
 }
+@media screen and (max-width: 1700px) {
+  .overlooking .img-contain {
+    top: -23%;
+  }
+}
 @media screen and (max-width: 1450px) {
   .overlooking .img-contain {
     top: -139%;
     left: 50%;
     transform: translateX(-50%);
-    width: 70% !important;
+    width: 80% !important;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -848,7 +905,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 }
 @media screen and (max-width: 1300px) {
   .ecoluxe .villas-content-conatin {
-    min-height: auto !important;
+    min-height: 60vh !important;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -1153,4 +1210,18 @@ footer input.no-arrows {
   .leaf-size {
     max-width: 60% !important;
   }
+}
+@media screen and (max-width: 1800px) {
+  .leaf-size {
+    max-width: 60% !important;
+  }
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+a:hover {
+  color: #debe95;
 }/*# sourceMappingURL=style.css.map */
