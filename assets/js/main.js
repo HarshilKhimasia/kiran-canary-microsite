@@ -135,3 +135,24 @@ document.addEventListener("scroll", function () {
   }
 });
 // Nav link active end
+
+// navbar toggler close on tap of the link start
+document.addEventListener('DOMContentLoaded', function () {
+  var navbarToggler = document.querySelector('.navbar-toggler');
+  var navbarCollapse = document.querySelector('.navbar-collapse');
+
+  // Close the navbar collapse when a link is clicked
+  navbarCollapse.addEventListener('click', function () {
+    navbarCollapse.classList.remove('show');
+  });
+
+  // Close the navbar collapse when the navbar toggler is clicked
+  navbarToggler.addEventListener('click', function () {
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    } else {
+      navbarCollapse.classList.add('show');
+    }
+  });
+});
+// navbar toggler close on tap of the link end
