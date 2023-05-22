@@ -116,6 +116,10 @@ h5 {
   font-size: 30px;
 }
 
+.size-10 {
+  font-size: 10px;
+}
+
 @media screen and (max-width: 450px) {
   .mob-size-14 {
     font-size: 12px !important;
@@ -569,6 +573,10 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   background-size: contain;
   margin-bottom: 4rem;
 }
+.lifespace .ninety-deg-text {
+  transform: rotate(90deg);
+  right: 0;
+}
 @media screen and (max-width: 950px) {
   .lifespace {
     background-size: cover;
@@ -635,10 +643,14 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 .lifespace .lifespace-contain ul {
   padding-left: 0;
   height: 100%;
-  line-height: 120%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 1700px) {
+  .lifespace .lifespace-contain ul {
+    line-height: 120%;
+  }
 }
 
 .about-us {
@@ -971,9 +983,15 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   padding: 8rem 0 9rem 0;
   margin-bottom: 5rem;
 }
+.the-world .ninety-deg-text {
+  transform: rotate(90deg) translateY(-50%);
+  right: 0;
+  top: 50%;
+  -ms-transform: rotate(90deg) translateY(-50%);
+}
 @media screen and (max-width: 450px) {
   .the-world {
-    padding: 4rem 0 2rem 0;
+    padding: 3.5rem 0 2rem 0;
     background-size: 35rem;
     background-position: top;
     margin-bottom: 0rem;
@@ -1062,6 +1080,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem 0 0 0;
+}
+footer .ninety-deg-text {
+  transform: rotate(270deg) translateY(-50%);
+  left: 0;
+  top: 50%;
+  -ms-transform: rotate(270deg) translateY(-50%);
 }
 footer .footer-leaf {
   top: 0;
@@ -1211,14 +1235,11 @@ footer input.no-arrows {
     max-width: 60% !important;
   }
 }
-
 @media screen and (max-width: 1800px) {
   .leaf-size {
     max-width: 60% !important;
   }
 }
-
- main
 
 a {
   color: unset;
