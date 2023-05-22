@@ -1211,11 +1211,14 @@ footer input.no-arrows {
     max-width: 60% !important;
   }
 }
+
 @media screen and (max-width: 1800px) {
   .leaf-size {
     max-width: 60% !important;
   }
 }
+
+ main
 
 a {
   color: unset;

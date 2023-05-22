@@ -4,6 +4,7 @@ mm.add("(max-width: 1700px)", () => {
     // desktop setup code here...
   });
 
+
   mm.add("(max-width: 1700px)", () => {
     let tl = gsap.timeline({
         // yes, we can add it to an entire timeline!
@@ -20,6 +21,17 @@ mm.add("(max-width: 1700px)", () => {
     
     tl.to(".leaf", { x: 190, duration: 10, });
   });
+
+let tl = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+        trigger: ".lifespace",
+        pin: false,   // pin the trigger element while active
+        start: "50% bottom", // when the top of the trigger hits the top of the viewport
+        end: "30%", // end after scrolling 500px beyond the start
+        markers: false,
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
 
   mm.add("(max-width: 6000px) and (min-width: 1700px)", () => {
     let tl = gsap.timeline({
@@ -38,6 +50,7 @@ mm.add("(max-width: 1700px)", () => {
     tl.to(".leaf", { x: 50, duration: 10, });
 });
 
+
 mm.add("(max-width: 1700px)", () => {
     let tlleaf = gsap.timeline({
         // yes, we can add it to an entire timeline!
@@ -54,6 +67,22 @@ mm.add("(max-width: 1700px)", () => {
     
     tlleaf.to(".leaf-about", { x: -80, duration: 10, });
   });
+
+tl.to(".leaf", { x: 157, y: 0, rotate: -18, duration: 10, });
+
+let tlleaf = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+        trigger: ".about-us",
+        pin: false,   // pin the trigger element while active
+        start: "0% 50%", // when the top of the trigger hits the top of the viewport
+        end: "100%", // end after scrolling 500px beyond the start
+        markers: false,
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+    }
+});
+
 
   mm.add("(max-width: 6000px) and (min-width: 1700px)", () => {
     let tlleaf = gsap.timeline({
@@ -80,7 +109,11 @@ let tlaccesLeaf = gsap.timeline({
         start: "top 80%", // when the top of the trigger hits the top of the viewport
         end: "5%", // end after scrolling 500px beyond the start
         markers: false,
+
         scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
 
     }
 });
@@ -95,7 +128,11 @@ let tlbottomaccesLeaf = gsap.timeline({
         start: "bottom 95%", // when the top of the trigger hits the top of the viewport
         end: "5%", // end after scrolling 500px beyond the start
         markers: false,
+
         scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
 
     }
 });
@@ -110,7 +147,11 @@ let tloverlookingLeaf = gsap.timeline({
         start: "top 80%", // when the top of the trigger hits the top of the viewport
         end: "10%", // end after scrolling 500px beyond the start
         markers: false,
+
         scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
 
     }
 });
@@ -126,7 +167,11 @@ mm.add("(max-width: 1700px)", () => {
             start: "top 80%", // when the top of the trigger hits the top of the viewport
             end: "10%", // end after scrolling 500px beyond the start
             markers: false,
+
             scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
     
         }
     });
@@ -142,7 +187,11 @@ let tlecoLeaf = gsap.timeline({
         start: "top 80%", // when the top of the trigger hits the top of the viewport
         end: "10%", // end after scrolling 500px beyond the start
         markers: false,
+
         scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
 
     }
 });
@@ -158,7 +207,11 @@ let tlecobottomLeaf = gsap.timeline({
         start: "20% top", // when the top of the trigger hits the top of the viewport
         end: "80%", // end after scrolling 500px beyond the start
         markers: false,
+
         scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
 
     }
 });
@@ -174,7 +227,11 @@ mm.add("(max-width: 1700px)", () => {
             start: "top 80%", // when the top of the trigger hits the top of the viewport
             end: "30%", // end after scrolling 500px beyond the start
             markers: false,
+
             scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
     
         }
     });
@@ -190,7 +247,11 @@ mm.add("(max-width: 1700px)", () => {
             start: "top 80%", // when the top of the trigger hits the top of the viewport
             end: "30%", // end after scrolling 500px beyond the start
             markers: false,
+
             scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
     
         }
     });
@@ -207,7 +268,11 @@ mm.add("(max-width: 1700px)", () => {
             start: "top bottom", // when the top of the trigger hits the top of the viewport
             end: "10%", // end after scrolling 500px beyond the start
             markers: false,
+
             scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
     
         }
     });
@@ -224,7 +289,11 @@ mm.add("(max-width: 1700px)", () => {
             start: "top bottom", // when the top of the trigger hits the top of the viewport
             end: "10%", // end after scrolling 500px beyond the start
             markers: false,
+
             scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
     
         }
     });

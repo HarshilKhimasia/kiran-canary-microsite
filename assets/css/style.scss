@@ -1117,11 +1117,16 @@ footer {
     @include mQ(1450px){
         max-width: 60% !important;
     }
+
     @include mQ(1800px){
         max-width: 60% !important;
     }
 }
 
+
+
+
+}
 
 
 a{
