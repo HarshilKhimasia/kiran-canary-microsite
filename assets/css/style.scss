@@ -612,6 +612,9 @@ header {
     .ninety-deg-text {
         transform: rotate(90deg);
         right: 0;
+        @include mQ(1700px) {
+            right: -15px;
+        }
     }
 
     @include mQ(950px) {
@@ -665,7 +668,7 @@ header {
         }
 
         @include mQ(1700px) {
-            width: 100%;
+            width: 80%;
             height: 80%;
             margin-left: 2rem;
         }
@@ -1023,6 +1026,9 @@ header {
         right: 0;
         top: 50%;
         -ms-transform: rotate(90deg) translateY(-50%);
+        @include mQ(1700px) {
+            right: -15px;
+        }
     }
 
     @include mQ(450px) {

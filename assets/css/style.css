@@ -577,6 +577,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   transform: rotate(90deg);
   right: 0;
 }
+@media screen and (max-width: 1700px) {
+  .lifespace .ninety-deg-text {
+    right: -15px;
+  }
+}
 @media screen and (max-width: 950px) {
   .lifespace {
     background-size: cover;
@@ -635,7 +640,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
 }
 @media screen and (max-width: 1700px) {
   .lifespace .lifespace-contain {
-    width: 100%;
+    width: 80%;
     height: 80%;
     margin-left: 2rem;
   }
@@ -988,6 +993,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   right: 0;
   top: 50%;
   -ms-transform: rotate(90deg) translateY(-50%);
+}
+@media screen and (max-width: 1700px) {
+  .the-world .ninety-deg-text {
+    right: -15px;
+  }
 }
 @media screen and (max-width: 450px) {
   .the-world {
